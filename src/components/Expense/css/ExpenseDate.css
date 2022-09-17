@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .expense-date-bg {
+        background-color: #2a2a2a;
+    }
+}
+
+@layer components {
+    .expense-date {
+        @apply flex flex-col items-center justify-center
+        w-[5.5rem] h-[5.5rem] border
+        text-white border-white expense-date-bg;
+    }
+
+    .expense-date__month {
+        @apply text-lg font-bold;
+    }
+    
+    .expense-date__year {
+        @apply text-[0.75rem];
+    }
+    
+    .expense-date__day {
+        @apply text-2xl font-bold;
+    }
+
+}
+

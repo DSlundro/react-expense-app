@@ -1,5 +1,4 @@
 import ExpenseItem from "./ExpenseItem";
-import Card from "../UI/Card";
 
 const Expenses = () => {
     const expenses = [
@@ -29,7 +28,7 @@ const Expenses = () => {
         },
     ];
     return (
-        <Card>
+        <div className="my__container">
             <ExpenseItem 
                 title={expenses[0].title}
                 amount={expenses[0].amount}
@@ -50,7 +49,7 @@ const Expenses = () => {
                 amount={expenses[3].amount}
                 date={expenses[3].date} 
             />
-        </Card>
+        </div>
     );
 }
 export default Expenses;

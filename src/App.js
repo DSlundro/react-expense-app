@@ -1,9 +1,13 @@
 import Expenses from "./components/Expense/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 const App = () => {
 
     return (
-        <Expenses />
+        <section>
+            <NewExpense />
+            <Expenses />
+        </section>
     );
 }
 

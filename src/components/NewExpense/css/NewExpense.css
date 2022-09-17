@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .new-expense {
+        @apply bg-[#a892ee] text-center p-4 my-8;
+    }
+    .new-expense button {
+        @apply text-inherit cursor-pointer py-4 px-8 mr-4 
+        text-white bg-[#40005d] border border-[#40005d] rounded-xl
+        hover:bg-[#510674] hover:border-[#510674]
+        active:bg-[#510674] active:border-[#510674];
+    }
+
+    .new-expense button.alternative {
+        @apply text-[#220131] border-transparent bg-transparent
+        hover:bg-[#ddb3f8] active:bg-[#ddb3f8];
+    }
+
+}
+
