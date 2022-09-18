@@ -11,20 +11,20 @@
 @layer components {
     .expense-date {
         @apply flex flex-col items-center justify-center
-        w-[5.5rem] h-[5.5rem] border
+        w-16 h-16 border
         text-white border-white expense-date-bg;
     }
 
     .expense-date__month {
-        @apply text-lg font-bold;
+        @apply text-xs font-bold;
     }
     
     .expense-date__year {
-        @apply text-[0.75rem];
+        @apply text-[10px];
     }
     
     .expense-date__day {
-        @apply text-2xl font-bold;
+        @apply text-base font-bold;
     }
 
 }
