@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .expenses-filter {
+        @apply text-white py-0 px-4;
+    }
+    
+    .expenses-filter__control {
+        @apply flex items-center justify-between my-1 mb-3 w-full;
+    }
+    
+    .expenses-filter label {
+        @apply font-bold;
+    }
+    
+    .expenses-filter select {
+        @apply text-black py-2 px-12 font-bold rounded-md;
+    }
+}

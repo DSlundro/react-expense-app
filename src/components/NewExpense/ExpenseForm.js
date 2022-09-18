@@ -1,10 +1,12 @@
 import { useState } from "react";
 
-const ExpenseForm = () => {
-    const [enteredTitle, setEnteredTitle] = useState('');
+const ExpenseForm = (props) => {
+    // Destructuring of useState Hook - (variable with the state, function to change the state  )
+    const [enteredTitle, setEnteredTitle] = useState(''); // useState(initial value)
     const [enteredAmount, setEnteredAmount] = useState('');
     const [enteredDate, setEnteredDate] = useState('');
 
+    // onChange title.value use the function to change the state
     const titleChangeHandler = event => {
         setEnteredTitle(event.target.value);
     }
@@ -20,17 +22,18 @@ const ExpenseForm = () => {
     const submitHandler = (event) => {
         event.preventDefault();
 
-        const expendeData = {
+        const expenseData = {
             title: String(enteredTitle),
             amount: +enteredAmount,
             date: new Date(enteredDate)
         };
 
+        props.onSaveExpenseData(expenseData);
+
         // Clear inputs
         setEnteredTitle('');
         setEnteredAmount('');
         setEnteredDate('');
-    console.log(expendeData);
     };
 
     return (
