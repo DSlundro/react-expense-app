@@ -7,7 +7,6 @@ const NewExpense = (props) => {
             ...enteredExpenseData,
             id: Math.ceil(Math.random().toString() * 100000000)
         };
-        console.log(expenseData);
         props.onAddExpense(expenseData)
     };
 
