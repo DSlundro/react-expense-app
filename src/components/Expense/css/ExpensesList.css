@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .expenses-list {
+    @apply list-none p-0;
+    }
+
+    .expenses-list__fallback {
+    @apply text-white text-center py-3 font-bold;
+    }
+}
