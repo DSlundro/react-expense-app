@@ -5,8 +5,6 @@
 
 @layer components {
     .chart {
-        @apply flex justify-around text-center p-4 rounded-xl h-5 bg-[#f8dfff];
-        background-color: #f8dfff;
-        height: 10rem;
+        @apply flex justify-around text-center p-4 rounded-xl h-32 bg-[#f8dfff];
     }
 }
