@@ -3,10 +3,11 @@ import { useState } from "react";
 import ExpenseForm from "./ExpenseForm";
 import Card from '../UI/Card';
 
+
 const NewExpense = (props) => {
     const [isEditing, setIsEditing] = useState(false);
 
-
+    
     const saveExpenseDataHandler = (enteredExpenseData) => {
         const expenseData = {
             ...enteredExpenseData,
@@ -15,7 +16,6 @@ const NewExpense = (props) => {
         props.onAddExpense(expenseData);
         setIsEditing(false);
     };
-
 
     const startEditingHandler = () => {
         setIsEditing(true);

@@ -5,6 +5,8 @@
 @import './components/Expense/css/ExpensesList.css';
 @import './components/NewExpense/css/NewExpense.css';
 @import './components/NewExpense/css/ExpenseForm.css';
+@import './components/Chart/css/Chart.css';
+@import './components/Chart/css/ChartBar.css';
 
 
 @tailwind base;
