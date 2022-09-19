@@ -34,7 +34,12 @@ const ExpenseForm = (props) => {
         setEnteredTitle('');
         setEnteredAmount('');
         setEnteredDate('');
+        props.onCloseForm(false);
     };
+
+    const closeEditingHandler = () => {
+        props.onCloseForm(false);
+    }
 
     return (
         <form onSubmit={submitHandler}>
@@ -60,8 +65,13 @@ const ExpenseForm = (props) => {
                     onChange={dateChangeHandler}/>
                 </div>
             </div>
-            <div className="new-expense__actions">
-                <button type="submit">Add Expense</button>
+            <div className="flex justify-end">
+                <div className="new-expense__actions">
+                    <button onClick={closeEditingHandler}>Close</button>
+                </div>
+                <div className="new-expense__actions">
+                    <button type="submit">Add Expense</button>
+                </div>
             </div>
         </form>
     )
